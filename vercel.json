@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/hi/:path*", "destination": "/:path*", "permanent": true }
+  ]
+}
