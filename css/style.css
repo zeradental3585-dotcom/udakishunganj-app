@@ -248,3 +248,30 @@ footer.site nav a { margin: 0 10px; color: var(--muted); }
 .quick-links a { background: var(--teal); color: #fff; padding: 9px 16px; border-radius: 999px; font-weight: 700; font-size: 15px; text-decoration: none; }
 .quick-links a:nth-child(even) { background: var(--amber); }
 .quick-links a:hover { opacity: .9; text-decoration: none; }
+
+.chk-form { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 18px 0; }
+.chk-opt { display: flex; gap: 10px; align-items: flex-start; background: #fff; border: 2px solid #e2e8f0; border-radius: 12px; padding: 12px 14px; cursor: pointer; font-size: 16px; line-height: 1.45; }
+.chk-opt:has(input:checked) { border-color: var(--teal); background: #f0fdfa; }
+.chk-opt input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--teal); flex: none; }
+.chk-out h2 { margin-top: 28px; }
+.chk-card { border: 1px solid #e2e8f0; border-left: 5px solid var(--amber); border-radius: 10px; padding: 14px 16px; margin: 12px 0; background: #fff; }
+.chk-card h3 { margin: 0 0 6px; font-size: 18px; }
+.chk-ben { font-weight: 700; color: var(--teal-dark); margin: 0 0 6px; }
+.chk-note { font-size: 14px; color: var(--muted); margin: 0 0 6px; }
+.chk-docs { list-style: none; padding: 0; }
+.chk-docs li { margin: 8px 0; font-size: 16px; }
+.chk-docs input { width: 18px; height: 18px; accent-color: var(--teal); vertical-align: middle; }
+.chk-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.chk-btn { display: inline-block; border: 0; background: var(--teal); color: #fff; padding: 12px 20px; border-radius: 999px; font-weight: 700; font-size: 16px; cursor: pointer; text-decoration: none; font-family: inherit; }
+.chk-btn.wa { background: #16a34a; }
+.chk-btn:hover { opacity: .9; text-decoration: none; }
+.chk-empty { color: var(--muted); }
+.cta-checker { display: block; margin: 20px 0 4px; padding: 18px 20px; border-radius: 14px; background: linear-gradient(135deg, var(--teal-dark), var(--amber)); color: #fff; text-decoration: none; }
+.cta-checker strong { display: block; font-size: 20px; }
+.cta-checker span { font-size: 15px; opacity: .95; }
+.cta-checker:hover { text-decoration: none; opacity: .95; }
+@media (max-width: 640px) { .chk-form { grid-template-columns: 1fr; } }
+@media print { header.site, footer.site, .chk-form, .chk-actions { display: none; } }
+
+nav.site a.nav-hl { color: var(--amber); font-weight: 800; }
+.related-cta { margin-top: 18px; }
