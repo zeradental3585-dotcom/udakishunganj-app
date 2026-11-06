@@ -18,3 +18,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+/* WhatsApp share button on every page (distribution) */
+(function () {
+  var hi = document.documentElement.lang === 'hi';
+  var can = document.querySelector('link[rel="canonical"]');
+  var url = can ? can.href : location.href;
+  var msg = document.title.split(' | ')[0] + '\n' + url;
+  var a = document.createElement('a');
+  a.className = 'wa-fab';
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  a.href = 'https://wa.me/?text=' + encodeURIComponent(msg);
+  a.setAttribute('aria-label', hi ? 'WhatsApp पर शेयर करें' : 'Share on WhatsApp');
+  a.textContent = hi ? 'WhatsApp पर शेयर करें' : 'Share on WhatsApp';
+  a.addEventListener('click', function () { if (window.gtag) gtag('event', 'share_whatsapp', { page: location.pathname }); });
+  document.body.appendChild(a);
+})();
