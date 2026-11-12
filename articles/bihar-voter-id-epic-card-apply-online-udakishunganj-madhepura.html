@@ -6,7 +6,8 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-7L0P09K60Y');
+  var ik=false;try{if(location.search.indexOf('internal=1')>-1)localStorage.setItem('ik_internal','1');ik=localStorage.getItem('ik_internal')==='1';}catch(e){}
+  gtag('config', 'G-7L0P09K60Y', ik ? {traffic_type:'internal'} : {});
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,6 +38,12 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#0d9488">
 <link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "बिहार वोटर आईडी (EPIC कार्ड) ऑनलाइन आवेदन: उदाकिशुनगंज व मधेपुरा के लिए गाइड", "description": "नया वोटर आईडी (EPIC) कैसे बनवाएं, नाम/पता कैसे सुधारें, और आवेदन स्टेटस कैसे चेक करें — बिहार के वोटर्स सर्विस पोर्टल के जरिए, उदाकिशुनगंज व मधेपुरा निवासियों के लिए।", "inLanguage": "hi", "mainEntityOfPage": "https://www.udakishunganj.com/articles/bihar-voter-id-epic-card-apply-online-udakishunganj-madhepura.html", "dateModified": "2026-11-12", "image": "https://www.udakishunganj.com/og-image.png", "author": {"@type": "Organization", "name": "Udakishunganj.com", "url": "https://www.udakishunganj.com/"}, "publisher": {"@type": "Organization", "name": "Udakishunganj.com", "url": "https://www.udakishunganj.com/", "logo": {"@type": "ImageObject", "url": "https://www.udakishunganj.com/android-chrome-512x512.png"}}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Udakishunganj.com", "item": "https://www.udakishunganj.com/"}, {"@type": "ListItem", "position": 2, "name": "बिहार वोटर आईडी (EPIC कार्ड) ऑनलाइन आवेदन: उदाकिशुनगंज व मधेपुरा के लिए गाइड", "item": "https://www.udakishunganj.com/articles/bihar-voter-id-epic-card-apply-online-udakishunganj-madhepura.html"}]}
+</script>
 </head>
 <body>
 

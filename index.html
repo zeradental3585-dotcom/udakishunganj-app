@@ -6,7 +6,8 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-7L0P09K60Y');
+  var ik=false;try{if(location.search.indexOf('internal=1')>-1)localStorage.setItem('ik_internal','1');ik=localStorage.getItem('ik_internal')==='1';}catch(e){}
+  gtag('config', 'G-7L0P09K60Y', ik ? {traffic_type:'internal'} : {});
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,7 +80,7 @@
     <a class="cta-checker" href="/yojana-checker.html"><strong>आपके लिए कौन-सी सरकारी योजना है? 1 मिनट में चेक करें</strong><span>अपनी स्थिति चुनें — योजनाएं, जरूरी दस्तावेज़ और पोर्टल तुरंत पाएं। मुफ्त।</span></a>
     <a class="cta-checker cta-weather" href="/flood-weather.html"><strong>उदाकिशुनगंज का लाइव मौसम व कोसी बाढ़ अपडेट</strong><span>7 दिन की बारिश, ऊपरी इलाकों का बाढ़ संकेत, किसान सलाह और हेल्पलाइन।</span></a>
     <a class="cta-checker cta-jobs" href="/rojgar-result.html"><strong>सरकारी नौकरी, रिजल्ट व एडमिट कार्ड — आधिकारिक पोर्टल + आयु कैलकुलेटर</strong><span>फर्जी साइट से बचें। अपनी आयु पात्रता व दस्तावेज़ सूची जांचें।</span></a>
-    <div class="quick"><h2>अभी सबसे ज़्यादा देखे जा रहे</h2><div class="quick-links"><a href="/rojgar-result.html">सरकारी नौकरी व रिजल्ट</a><a href="articles/bnmu-result-admit-card-datesheet-madhepura-kosi-division.html">बीएनएमयू रिजल्ट / एडमिट कार्ड</a><a href="articles/pm-kisan-samman-nidhi-status-ekyc-udakishunganj-madhepura.html">पीएम किसान स्टेटस</a><a href="articles/ayushman-bharat-pmjay-health-card-udakishunganj-madhepura.html">आयुष्मान कार्ड</a><a href="articles/pm-awas-yojana-gramin-status-udakishunganj-madhepura.html">आवास योजना सूची</a><a href="articles/bihar-ration-card-apply-online-udakishunganj-madhepura.html">राशन कार्ड</a><a href="articles/bihar-board-results-madhepura-students-guide.html">बिहार बोर्ड रिजल्ट</a><a href="articles/e-shram-card-registration-unorganised-workers-udakishunganj-madhepura.html">ई-श्रम कार्ड</a><a href="articles/kosi-river-flood-alert-safety-guide-udakishunganj-madhepura.html">कोसी बाढ़ अलर्ट</a></div></div>
+    <div class="quick"><h2>अभी सबसे ज़्यादा देखे जा रहे</h2><div class="quick-links"><a href="/bihar-yojana-list.html">बिहार योजना सूची</a><a href="/rojgar-result.html">सरकारी नौकरी व रिजल्ट</a><a href="articles/bnmu-result-admit-card-datesheet-madhepura-kosi-division.html">बीएनएमयू रिजल्ट / एडमिट कार्ड</a><a href="articles/pm-kisan-samman-nidhi-status-ekyc-udakishunganj-madhepura.html">पीएम किसान स्टेटस</a><a href="articles/ayushman-bharat-pmjay-health-card-udakishunganj-madhepura.html">आयुष्मान कार्ड</a><a href="articles/pm-awas-yojana-gramin-status-udakishunganj-madhepura.html">आवास योजना सूची</a><a href="articles/bihar-ration-card-apply-online-udakishunganj-madhepura.html">राशन कार्ड</a><a href="articles/bihar-board-results-madhepura-students-guide.html">बिहार बोर्ड रिजल्ट</a><a href="articles/e-shram-card-registration-unorganised-workers-udakishunganj-madhepura.html">ई-श्रम कार्ड</a><a href="articles/kosi-river-flood-alert-safety-guide-udakishunganj-madhepura.html">कोसी बाढ़ अलर्ट</a></div></div>
     <div class="article-grid">
       <a class="article-card" href="articles/udakishunganj-bdo-office-block-contact-guide.html">
         <span class="tag">सिविक</span>
@@ -241,6 +242,16 @@
         <span class="tag">शिक्षा</span>
         <h3>बीएनएमयू (BNMU) रिजल्ट, एडमिट कार्ड व डेटशीट 2026: मधेपुरा, सहरसा व सुपौल के छात्रों के लिए गाइड</h3>
         <p>भूपेन्द्र नारायण मंडल विश्वविद्यालय के यूजी व पीजी रिजल्ट, एडमिट कार्ड व डेटशीट कैसे चेक करें — bnmuumis.in व bnmu.ac.in पोर्टल की पूरी जानकारी।</p>
+      </a>
+      <a class="article-card" href="articles/mukhyamantri-mahila-rojgar-yojana-bihar-10000-apply-jeevika.html">
+        <span class="tag">योजना</span>
+        <h3>मुख्यमंत्री महिला रोजगार योजना बिहार: ₹10,000 कैसे मिलेगा, पात्रता व आवेदन (उदाकिशुनगंज व मधेपुरा)</h3>
+        <p>पात्र महिलाओं को ₹10,000 की शुरुआती सहायता, जरूरी दस्तावेज़ और जीविका के जरिए आवेदन की जानकारी।</p>
+      </a>
+      <a class="article-card" href="articles/bihar-125-unit-free-electricity-nbpdcl-zero-bill-madhepura.html">
+        <span class="tag">सिविक</span>
+        <h3>बिहार में 125 यूनिट मुफ्त बिजली: जीरो बिल कैसे मिलेगा, किसे नहीं मिलेगा (NBPDCL, मधेपुरा)</h3>
+        <p>आवेदन की जरूरत है या नहीं, किराएदार/सब-मीटर का नियम और बिल गलत आए तो क्या करें।</p>
       </a>
     </div>
   </div>

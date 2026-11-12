@@ -6,7 +6,8 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-7L0P09K60Y');
+  var ik=false;try{if(location.search.indexOf('internal=1')>-1)localStorage.setItem('ik_internal','1');ik=localStorage.getItem('ik_internal')==='1';}catch(e){}
+  gtag('config', 'G-7L0P09K60Y', ik ? {traffic_type:'internal'} : {});
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,7 +79,7 @@
     <a class="cta-checker" href="/en/yojana-checker.html"><strong>Which schemes are you eligible for? Check in 1 minute</strong><span>Tick your situation and get schemes, documents and portals — free.</span></a>
     <a class="cta-checker cta-weather" href="/en/flood-weather.html"><strong>Live weather &amp; Kosi flood watch for Udakishunganj</strong><span>7-day rain forecast, upstream rainfall signal, farming advice and helplines.</span></a>
     <a class="cta-checker cta-jobs" href="/en/rojgar-result.html"><strong>Govt jobs, results &amp; admit cards — official portals + age calculator</strong><span>Avoid fake sites. Check your age eligibility and document list.</span></a>
-    <div class="quick"><h2>Most-searched right now</h2><div class="quick-links"><a href="/en/rojgar-result.html">Govt Jobs &amp; Results</a><a href="articles/bnmu-result-admit-card-datesheet-madhepura-kosi-division.html">BNMU Result / Admit Card</a><a href="articles/pm-kisan-samman-nidhi-status-ekyc-udakishunganj-madhepura.html">PM Kisan Status</a><a href="articles/ayushman-bharat-pmjay-health-card-udakishunganj-madhepura.html">Ayushman Card</a><a href="articles/pm-awas-yojana-gramin-status-udakishunganj-madhepura.html">PMAY-G List</a><a href="articles/bihar-ration-card-apply-online-udakishunganj-madhepura.html">Ration Card</a><a href="articles/bihar-board-results-madhepura-students-guide.html">Bihar Board Result</a><a href="articles/e-shram-card-registration-unorganised-workers-udakishunganj-madhepura.html">e-Shram Card</a><a href="articles/kosi-river-flood-alert-safety-guide-udakishunganj-madhepura.html">Kosi Flood Alert</a></div></div>
+    <div class="quick"><h2>Most-searched right now</h2><div class="quick-links"><a href="/en/bihar-yojana-list.html">Bihar Scheme List</a><a href="/en/rojgar-result.html">Govt Jobs &amp; Results</a><a href="articles/bnmu-result-admit-card-datesheet-madhepura-kosi-division.html">BNMU Result / Admit Card</a><a href="articles/pm-kisan-samman-nidhi-status-ekyc-udakishunganj-madhepura.html">PM Kisan Status</a><a href="articles/ayushman-bharat-pmjay-health-card-udakishunganj-madhepura.html">Ayushman Card</a><a href="articles/pm-awas-yojana-gramin-status-udakishunganj-madhepura.html">PMAY-G List</a><a href="articles/bihar-ration-card-apply-online-udakishunganj-madhepura.html">Ration Card</a><a href="articles/bihar-board-results-madhepura-students-guide.html">Bihar Board Result</a><a href="articles/e-shram-card-registration-unorganised-workers-udakishunganj-madhepura.html">e-Shram Card</a><a href="articles/kosi-river-flood-alert-safety-guide-udakishunganj-madhepura.html">Kosi Flood Alert</a></div></div>
     <div class="article-grid">
       <a class="article-card" href="articles/udakishunganj-bdo-office-block-contact-guide.html">
         <span class="tag">Civic</span>
@@ -240,6 +241,16 @@
         <span class="tag">Education</span>
         <h3>BNMU Result, Admit Card & Datesheet 2026: Guide for Students in Madhepura, Saharsa & Supaul</h3>
         <p>How to check UG/PG results, download admit cards, and find datesheets from Bhupendra Narayan Mandal University — full guide to the bnmuumis.in and bnmu.ac.in portals.</p>
+      </a>
+      <a class="article-card" href="articles/mukhyamantri-mahila-rojgar-yojana-bihar-10000-apply-jeevika.html">
+        <span class="tag">Scheme</span>
+        <h3>Mukhyamantri Mahila Rojgar Yojana, Bihar: How to Get ₹10,000, Eligibility & Apply</h3>
+        <p>The ₹10,000 starting grant for eligible women, documents needed, and applying through JEEViKA.</p>
+      </a>
+      <a class="article-card" href="articles/bihar-125-unit-free-electricity-nbpdcl-zero-bill-madhepura.html">
+        <span class="tag">Civic</span>
+        <h3>Bihar 125 Units Free Electricity: How You Get a Zero Bill and Who Misses Out (NBPDCL)</h3>
+        <p>Whether you must apply, the tenant/sub-meter rule, and what to do if your bill is wrong.</p>
       </a>
     </div>
   </div>

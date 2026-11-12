@@ -35,3 +35,19 @@ document.addEventListener('DOMContentLoaded', function () {
   a.addEventListener('click', function () { if (window.gtag) gtag('event', 'share_whatsapp', { page: location.pathname }); });
   document.body.appendChild(a);
 })();
+
+/* Engagement tracking: outbound official-portal clicks, scroll depth, key events */
+(function () {
+  if (!window.gtag) return;
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a || !a.hostname || a.hostname === location.hostname) return;
+    gtag('event', 'outbound_click', { link_domain: a.hostname, page: location.pathname });
+    if (/\.(gov|nic)\.in$|\.ac\.in$/.test(a.hostname)) gtag('event', 'official_portal_click', { link_domain: a.hostname, page: location.pathname });
+  });
+  var marks = { 50: false, 90: false };
+  window.addEventListener('scroll', function () {
+    var h = document.documentElement, pct = (h.scrollTop + window.innerHeight) / h.scrollHeight * 100;
+    [50, 90].forEach(function (m) { if (!marks[m] && pct >= m) { marks[m] = true; gtag('event', 'scroll_depth', { percent: m, page: location.pathname }); } });
+  }, { passive: true });
+})();
