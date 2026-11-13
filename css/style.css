@@ -307,3 +307,9 @@ nav.site a.nav-w { color: #0369a1; font-weight: 800; }
 @media print { .wa-fab { display: none; } }
 
 .cta-jobs { background: linear-gradient(135deg, #7c3aed, var(--amber)); margin-top: 10px; }
+
+.pwa-bar { position: fixed; left: 12px; right: 12px; bottom: 74px; z-index: 49; display: flex; align-items: center; gap: 10px; background: #0f172a; color: #fff; padding: 10px 12px; border-radius: 12px; font-size: 14px; box-shadow: 0 4px 14px rgba(0,0,0,.3); }
+.pwa-bar span { flex: 1; }
+.pwa-add { background: var(--amber); color: #fff; border: 0; padding: 8px 14px; border-radius: 999px; font-weight: 700; font-family: inherit; cursor: pointer; }
+.pwa-x { background: transparent; color: #fff; border: 0; font-size: 22px; cursor: pointer; line-height: 1; }
+@media print { .pwa-bar { display: none; } }

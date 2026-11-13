@@ -2,10 +2,31 @@
   "name": "उदाकिशुनगंज.कॉम",
   "short_name": "उदाकिशुनगंज",
   "icons": [
-    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ],
   "theme_color": "#0d9488",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "lang": "hi",
+  "description": "उदाकिशुनगंज, मधेपुरा के लिए सरकारी योजना, मौसम, बाढ़ अलर्ट, रिजल्ट व नौकरी गाइड",
+  "orientation": "portrait"
 }

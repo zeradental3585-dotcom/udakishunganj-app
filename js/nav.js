@@ -51,3 +51,28 @@ document.addEventListener('DOMContentLoaded', function () {
     [50, 90].forEach(function (m) { if (!marks[m] && pct >= m) { marks[m] = true; gtag('event', 'scroll_depth', { percent: m, page: location.pathname }); } });
   }, { passive: true });
 })();
+
+/* PWA: register service worker and offer "Add to Home Screen" */
+(function () {
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js').catch(function () {}); });
+  }
+  var hi = document.documentElement.lang === 'hi';
+  var deferred = null;
+  window.addEventListener('beforeinstallprompt', function (e) {
+    e.preventDefault();
+    deferred = e;
+    try { if (localStorage.getItem('ik_pwa_dismissed')) return; } catch (x) {}
+    var bar = document.createElement('div');
+    bar.className = 'pwa-bar';
+    bar.innerHTML = '<span>' + (hi ? 'ऐप की तरह इस्तेमाल करें — होम स्क्रीन में जोड़ें' : 'Use it like an app — add to Home Screen') + '</span>' +
+      '<button type="button" class="pwa-add">' + (hi ? 'जोड़ें' : 'Add') + '</button><button type="button" class="pwa-x" aria-label="close">&times;</button>';
+    document.body.appendChild(bar);
+    bar.querySelector('.pwa-add').addEventListener('click', function () {
+      deferred.prompt();
+      deferred.userChoice.then(function (r) { if (window.gtag) gtag('event', 'pwa_install_choice', { outcome: r.outcome }); bar.remove(); });
+    });
+    bar.querySelector('.pwa-x').addEventListener('click', function () { try { localStorage.setItem('ik_pwa_dismissed', '1'); } catch (x) {} bar.remove(); });
+  });
+  window.addEventListener('appinstalled', function () { if (window.gtag) gtag('event', 'pwa_installed'); });
+})();
