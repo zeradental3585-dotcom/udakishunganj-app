@@ -313,3 +313,51 @@ nav.site a.nav-w { color: #0369a1; font-weight: 800; }
 .pwa-add { background: var(--amber); color: #fff; border: 0; padding: 8px 14px; border-radius: 999px; font-weight: 700; font-family: inherit; cursor: pointer; }
 .pwa-x { background: transparent; color: #fff; border: 0; font-size: 22px; cursor: pointer; line-height: 1; }
 @media print { .pwa-bar { display: none; } }
+
+/* ---- visual scheme pages (/yojana/) ---- */
+.yj { font-size: 19px; line-height: 1.6; }
+.yj .crumb { font-size: 14px; color: var(--muted); margin: 6px 0 12px; }
+.yj-hero { background: var(--c); color: #fff; border-radius: 18px; padding: 22px 20px 20px; margin-bottom: 16px; text-align: center; }
+.yj-hero h1 { color: #fff; font-size: 26px; line-height: 1.35; margin: 6px 0 10px; }
+.yj-emoji { font-size: 64px; line-height: 1.1; margin-top: 8px; }
+.yj-badge { display: inline-block; background: #fff; color: var(--c); font-weight: 800; font-size: 14px; padding: 4px 12px; border-radius: 999px; }
+.yj-cat { background: rgba(255,255,255,.2); color: #fff; }
+.yj-big { background: rgba(255,255,255,.16); border-radius: 12px; padding: 12px 14px; font-size: 21px; font-weight: 800; margin: 8px 0 14px; }
+.yj-actions, .yj-cta { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.yj-cta { margin: 16px 0; }
+.yj-btn { display: inline-block; border: 0; cursor: pointer; font-family: inherit; font-weight: 800; font-size: 17px; padding: 12px 18px; border-radius: 999px; text-decoration: none; background: #fff; color: #0f172a; }
+.yj-btn:hover { text-decoration: none; opacity: .92; }
+.yj-wa { background: #16a34a; color: #fff; }
+.yj-fb { background: #1877f2; color: #fff; }
+.yj-listen { background: #0f172a; color: #fff; }
+.yj-main { background: var(--c, var(--teal)); color: #fff; }
+.yj-sec { background: #e2e8f0; color: #0f172a; }
+.yj-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.yj-card { border: 3px solid var(--c); border-radius: 16px; padding: 14px 16px; background: #fff; }
+.yj-card h2 { margin: 0 0 8px; font-size: 21px; color: var(--c); }
+.yj-card ul, .yj-card ol { list-style: none; margin: 0; padding: 0; }
+.yj-card li { display: flex; gap: 10px; align-items: flex-start; margin: 9px 0; }
+.yj-ic { flex: none; }
+.yj-n { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--c); color: #fff; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; font-size: 16px; }
+.yj-how { grid-column: 1 / -1; }
+.yj-warn { background: #fffbeb; border: 2px solid #fcd34d; border-radius: 14px; padding: 12px 14px; margin: 14px 0; font-size: 17px; }
+.yj-free { background: #fef2f2; border-color: #fca5a5; }
+.yj-share { text-align: center; margin: 22px 0; }
+.yj-share img { max-width: 100%; height: auto; border-radius: 14px; border: 1px solid #e2e8f0; }
+.yj-faq { border: 2px solid #e2e8f0; border-radius: 12px; padding: 10px 14px; margin: 8px 0; }
+.yj-faq summary { font-weight: 800; cursor: pointer; }
+.yj-minis, .yj-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.yj-mini { display: inline-flex; gap: 8px; align-items: center; background: #fff; border: 2px solid var(--c); color: #0f172a; border-radius: 999px; padding: 8px 14px; font-weight: 700; font-size: 16px; text-decoration: none; }
+.yj-chips { margin: 8px 0 16px; }
+.yj-chip { border: 2px solid var(--teal); background: #fff; color: var(--teal-dark); font-family: inherit; font-weight: 800; font-size: 16px; padding: 8px 14px; border-radius: 999px; cursor: pointer; }
+.yj-chip.is-on { background: var(--teal); color: #fff; }
+.yj-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+.yj-tile { display: flex; flex-direction: column; gap: 6px; border: 3px solid var(--c); border-radius: 16px; padding: 14px; background: #fff; color: #0f172a; text-decoration: none; }
+.yj-tile:hover { text-decoration: none; background: #f8fafc; }
+.yj-tile b { font-size: 20px; line-height: 1.3; }
+.yj-t-emo { font-size: 40px; line-height: 1; }
+.yj-t-lv { align-self: flex-start; background: var(--c); color: #fff; font-size: 13px; font-weight: 800; padding: 2px 10px; border-radius: 999px; }
+.yj-t-b { font-size: 16px; color: #334155; }
+.yj-t-go { font-weight: 800; color: var(--c); margin-top: auto; }
+@media (max-width: 640px) { .yj-grid { grid-template-columns: 1fr; } .yj-hero h1 { font-size: 22px; } .yj-btn { font-size: 16px; } }
+.cta-yojana { background: linear-gradient(135deg, #be185d, #ea580c); margin-bottom: 10px; }
